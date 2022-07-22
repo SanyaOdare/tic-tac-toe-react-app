@@ -9,8 +9,66 @@
 body {
   background-color: #212339;
   color: #31e5e3;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Inter', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 500;
+  letter-spacing: .05rem;
+  margin: 1rem;
+}
+
+.board {
+  background: #3950ad;
+  border: 1rem solid #3950ad;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+  height: 500px;
+  width: 500px;
 }
 
 
+.squares {
+  background: #212339;
+  border: none;
+  cursor: pointer;
+  font-size: 5rem;
+  outline: none;
+}
+
+.x {
+  color: #ff56bd;
+}
+
+.o {
+  color: #31e5e3;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  padding: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.info-wrapper button {
+  background: #212339;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 0.5rem 1rem;
+}
