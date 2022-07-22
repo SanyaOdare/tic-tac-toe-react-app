@@ -37,6 +37,10 @@ const App = () => {
   //     );
   //   });
 
+  const handleReset = () => {
+    setStepNumber(0);
+  }
+
   return (
     <div className="container">
       <h1>Tic Tac Toe React App</h1>
@@ -47,6 +51,7 @@ const App = () => {
           {renderMoves()}
         </div> */}
         <h3>{winner ? "Winner is: " + winner : "Next Player is: " + xO}</h3>
+        <button className="reset-button" onClick={handleReset}>Reset</button>
       </div>
     </div>
   );

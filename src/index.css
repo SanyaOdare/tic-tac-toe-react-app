@@ -25,6 +25,7 @@ body {
 }
 
 h1 {
+  font-weight: 500;
   margin: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -58,10 +59,19 @@ h1 {
 .info-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+
+.info-wrapper > .reset-button {
+  background: none;
+  border: 1px solid #a5b7ff;
+  color: #a5b7ff;
+  padding: .8rem 3rem;
 }
 
 h3 {
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 li {
